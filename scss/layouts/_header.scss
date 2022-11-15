@@ -1,0 +1,106 @@
+.topWrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 0 1rem;
+  background-color: $mainColor;
+}
+
+.headerNav {
+  display: flex;
+  align-items: center;
+
+  &__leftNav {
+    display: flex;
+
+    &__nameSection {
+      display: flex;
+      align-items: center;
+
+      p {
+        margin: 0 1rem;
+        color: $white;
+      }
+    }
+
+  }
+
+  &__rightNav {
+    display: flex;
+    margin-left: auto;
+    text-align: right;
+    align-items: center;
+
+    &__settings,
+    &__menuItem {
+      a {
+        i {
+          font-size: 1.5rem;
+          color: $white;
+          margin: 0 .7rem;
+        }
+      }
+    }
+
+    &__userAccount {
+      a {
+        img {
+          width: 26px;
+          margin: 0 0 0 .7rem;
+        }
+      }
+    }
+
+    &__menuItem{
+      a {
+        img {
+          width: 20px;
+          margin: 0 0 0 .7rem;
+        }
+      }
+    }
+
+    &__settings{
+      a {
+        img {
+          width: 20px;
+          margin: 0 0 0 .7rem;
+        }
+      }
+    }
+
+
+  }
+
+}
+
+.bmenu {
+  display: inline-block;
+  cursor: pointer;
+  margin-top: 0.3rem;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 25px;
+  height: 4px;
+  background-color: $white;
+  margin: .3rem 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-4px, 5px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+

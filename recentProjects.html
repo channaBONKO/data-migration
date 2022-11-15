@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/datamigration.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Data Migration - Recent Projects</title>
+</head>
+
+<body>
+<div class="wrapper">
+
+    <div class="topSection">
+
+        <div class="topSection__img">
+            <img src="img/logo_header.png" alt="Header logo">
+        </div>
+
+        <div class="topSection__createProject">
+            <form action="newProject.html">
+                <input type="submit" value="Create New Project" class="primary">
+            </form>
+        </div>
+
+    </div>
+
+
+    <div class="bottomSection">
+
+        <div>
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#recentProjects">Recent Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#allProjects">All Projects</a>
+                </li>
+
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div id="recentProjects" class="tab-pane active"><br>
+                    <table class="table borderless tableCustom">
+                        <thead>
+                        <tr>
+                            <th>Project name</th>
+                            <th>Created By</th>
+                            <th>Last Activity date</th>
+                            <th>Project Status</th>
+                            <th>Project Progress</th>
+                            <th></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Defaultson</td>
+                            <td>By Doe</td>
+                            <td>12 02 2020</td>
+                            <td><span><img src="img/complete.png" alt="imgFlag" class="imgFlag"></span>
+                                Compleated
+                            </td>
+                            <td>Channa Lakmal <span class="progressActivity">Last activity : 12.02.2020</span> <span>Migrated</span>
+                            </td>
+                            <td>
+                                <form action="listTable.html">
+                                    <button class="projectProcess">
+                                        <i class="fa fa-arrow-right"></i>
+                                    </button>
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Activeson</td>
+                            <td>By Moe</td>
+                            <td>12 02 2020</td>
+                            <td><span><img src="img/progress.png" alt="imgFlag" class="imgFlag"></span> Work in
+                                Progress
+                            </td>
+                            <td>Channa Lakmal <span class="progressActivity">Last activity : 12.02.2020</span> <span>Cleansing</span>
+                            </td>
+                            <td>
+                                <form action="listTable.html">
+                                    <button class="projectProcess">
+                                        <i class="fa fa-arrow-right"></i>
+                                    </button>
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Secondson</td>
+                            <td>By Dooley</td>
+                            <td>12 02 2020</td>
+                            <td><span><img src="img/complete.png" alt="imgFlag" class="imgFlag"></span>
+                                Compleated
+                            </td>
+                            <td>Channa Lakmal <span class="progressActivity">Last activity : 12.02.2020</span> <span>Migrated</span>
+                            </td>
+                            <td>
+                                <form action="listTable.html">
+                                    <button class="projectProcess">
+                                        <i class="fa fa-arrow-right"></i>
+                                    </button>
+                                </form>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+                <div id="allProjects" class="tab-pane fade"><br>
+                    <table class="table borderless tableCustom">
+                        <thead>
+                        <tr>
+                            <th>Project name</th>
+                            <th>Created By</th>
+                            <th>Last Activity date</th>
+                            <th>Project Status</th>
+                            <th></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Defaultson</td>
+                            <td>By Doe</td>
+                            <td>12 02 2020</td>
+                            <td><span><img src="img/complete.png" alt="imgFlag" class="imgFlag"></span>
+                                Compleated
+                            </td>
+                            <td>
+                                <form action="listTable.html">
+                                    <button class="projectProcess">
+                                        <i class="fa fa-arrow-right"></i>
+                                    </button>
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Activeson</td>
+                            <td>By Moe</td>
+                            <td>12 02 2020</td>
+                            <td><span><img src="img/progress.png" alt="imgFlag" class="imgFlag"></span> Work in
+                                Progress
+                            </td>
+                            <td>
+                                <form action="listTable.html">
+                                    <button class="projectProcess">
+                                        <i class="fa fa-arrow-right"></i>
+                                    </button>
+                                </form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Secondson</td>
+                            <td>By Dooley</td>
+                            <td>12 02 2020</td>
+                            <td><span><img src="img/complete.png" alt="imgFlag" class="imgFlag"></span>
+                                Compleated
+                            </td>
+                            <td>
+                                <form action="listTable.html">
+                                    <button class="projectProcess">
+                                        <i class="fa fa-arrow-right"></i>
+                                    </button>
+                                </form>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- Script files -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
+
+</html>

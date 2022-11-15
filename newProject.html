@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/datamigration.css">
+    <title>Data Migration</title>
+</head>
+
+<body>
+
+<div class="wrapper__fluid">
+
+    <div class="cnProject">
+
+        <div class="cnProject__topSection">
+
+            <div class="cnProject__topSection__title">
+                <h3>Create New Project</h3>
+            </div>
+
+            <div class="cnProject__topSection__imgLogo">
+                <div class="imgLine">
+                    <img src="img/logo1.png" alt="">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="cnProject__bottomSection">
+
+            <ul class="nav nav-pills mb-3 navCustom" id="pills-tab" role="tablist">
+
+                <li class="nav-item">
+                    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab"
+                       aria-controls="pills-home" aria-selected="true">From Excel</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab"
+                       aria-controls="pills-profile" aria-selected="false">From DB</a>
+                </li>
+
+            </ul>
+
+            <div class="tab-content" id="pills-tabContent">
+                <form action="recentProjects.html">
+
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+
+                        <div class="cnProject__bottomSection__formExcel">
+
+                            <div class="cnProject__bottomSection__formExcel__topSection">
+
+                                <div class="cnProject__bottomSection__formExcel__topSection__topLeft">
+                                    <label for="username" class="labelCustom--white">Project Name</label><br>
+                                    <input type="text" name="username">
+                                </div>
+
+                                <div class="cnProject__bottomSection__formExcel__topSection__topRight">
+                                    <label for="username" class="labelCustom--white">Upload Excel</label><br>
+                                    <input type="file" name="file" id="file_B"/>
+                                </div>
+
+                            </div>
+
+                            <div class="cnProject__bottomSection__formExcel__bottomSection">
+
+                                <div class="cnProject__bottomSection__formExcel__bottomSection__bottomLeft">
+
+                                    <label for="username" class="labelCustom--white">Project Status</label><br>
+
+                                    <select class="select">
+                                        <option value="" disabled="disabled" selected="selected">Select Project Status</option>
+                                        <option>Not Started</option>
+                                        <option>Work in Progress</option>
+                                        <option>Completed</option>
+                                    </select>
+
+                                </div>
+
+                                <div class="cnProject__bottomSection__formExcel__bottomSection__bottomRight">
+                                    <label for="username" class="labelCustom--white">Destination DB</label><br>
+                                    <input type="text" name="username">
+                                </div>
+
+                            </div>
+
+                            <div class="cnProject__footerSection">
+
+                                <div class="cnProject__footerSection__cancel">
+                                    <input type="submit" value="Cancel">
+                                </div>
+
+                                <div class="cnProject__footerSection__creatNewBtn">
+                                    <input type="submit" value="Create New Project">
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </form>
+
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                    21345678
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- Script files -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
+
+</html>

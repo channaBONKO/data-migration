@@ -1,0 +1,317 @@
+.mapBottomWrapper {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  height: calc(100vh - 8rem);
+}
+
+.mapFooterWrapper {
+  height: 5rem;
+  padding: 1rem;
+  border: 1px solid $gray-300;
+  border-bottom: none;
+  display: flex;
+  align-items: center;
+
+  &__dataCleansing {
+    margin-right: auto;
+
+    a {
+      padding: 1rem 1rem 1rem 0;
+
+      i {
+        margin: 0 1rem;
+      }
+    }
+  }
+
+  &__proceedtoDataMigration {
+    margin-left: auto;
+
+    a {
+      padding: 1rem 0 1rem 1rem;
+
+      i {
+        margin: 0 1rem;
+      }
+    }
+  }
+
+}
+
+.mleftSection {
+  border: 1px solid $gray-300;
+  border-bottom: none;
+}
+
+.mmiddleSection {
+  padding: 4rem 1rem;
+  overflow-y: auto;
+}
+
+.mrightSection {
+  border: 1px solid $gray-300;
+  border-bottom: none;
+}
+
+.treeSection {
+  padding: 1rem;
+  height: calc(100vh - 11.7rem);
+  overflow-y: auto;
+}
+
+.headerTitle {
+  padding: 1rem 2.5rem;
+  border-bottom: 1px solid $gray-300;
+}
+
+.tree {
+  margin: 0;
+  padding: 0;
+}
+
+.tree ul {
+  margin: 0;
+}
+
+.tree li {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px 5px 0 5px;
+  position: relative
+}
+
+.tree li::before, .tree li::after {
+  content: '';
+  left: -20px;
+  position: absolute;
+  right: auto
+}
+
+.tree li::before {
+  border-left: 1px solid #999;
+  bottom: 50px;
+  height: 100%;
+  top: 0;
+  width: 1px
+}
+
+.tree li::after {
+  border-top: 1px solid #999;
+  height: 20px;
+  top: 25px;
+  width: 25px
+}
+
+.tree li span {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 3px 8px;
+  text-decoration: none
+}
+
+.tree li.parent_li > span {
+  cursor: pointer
+}
+
+.tree > ul > li::before, .tree > ul > li::after {
+  border: 0
+}
+
+.tree li:last-child::before {
+  height: 30px
+}
+
+.tree li.parent_li > span:hover, .tree li.parent_li > span:hover + ul li span {
+}
+
+.treeItem {
+  .tree {
+    padding: 0;
+
+    & > ul {
+      padding-left: 0;
+    }
+  }
+
+  .badge {
+    padding: 5px 9px;
+    width: 100%;
+  }
+
+  .tree li:last-child::before {
+    height: 27px;
+  }
+
+  .badge-success,
+  .badge-warning,
+  .badge-important {
+    font-weight: normal;
+    font-size: 1rem;
+  }
+}
+
+.treeHead {
+  display: flex;
+  background-color: #8c8c8c;
+  color: white;
+  border: 1px solid #f3f3f3;
+  border-radius: 2rem;
+  padding: .3rem;
+  justify-content: space-around;
+  align-items: center;
+
+  span {
+    i {
+      margin: 0 .5rem 0 0;
+    }
+  }
+
+  button {
+    border-radius: 2rem;
+    background-color: white;
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0rem;
+    outline: 0;
+  }
+}
+
+.tblClm {
+  div {
+    display: flex;
+    background-color: #f3f3f3;
+    border: 1px solid #f3f3f3;
+    border-radius: 2rem;
+    padding: .3rem;
+    justify-content: space-between;
+    align-items: center;
+
+    span {
+      i {
+        margin: 0 .5rem 0 0;
+      }
+
+    }
+
+    button {
+      border-radius: 2rem;
+      background-color: white;
+      width: 2rem;
+      height: 2rem;
+      padding: 0rem;
+      outline: 0;
+    }
+
+  }
+
+  .cleansingTreeActive {
+    border: 1px solid $mainYellow;
+    background-color: $mainActive;
+    button{
+      i{
+        color: $mainYellow ;
+      }
+    }
+  }
+
+  .DestinationTreeActive {
+    border: 1px solid $mainGreen;
+    background-color: $mainDestinationActive;
+    button{
+      i{
+        color: $mainGreen ;
+      }
+    }
+  }
+}
+
+.collapsDefault {
+  button {
+    background-color: white;
+  }
+
+}
+
+.expandYellow {
+  .treeHead {
+    background-color: $mainYellow;
+  }
+
+  button {
+    background-color: white;
+  }
+
+}
+
+.expandGreen {
+  .treeHead {
+    background-color: $mainGreen;
+  }
+
+  button {
+    background-color: white;
+  }
+
+}
+
+.mapDataBox {
+  border: 1px solid $gray-300;
+  box-shadow: 0px 0px 5px 1px rgba(237, 237, 237, 1);
+  border-radius: .5rem;
+  padding: 0;
+
+  &__header {
+    padding: 1rem 2rem;
+    border-bottom: 1px solid $gray-300;
+
+    i {
+      color: $mainGreen;
+    }
+
+    &__close{
+      right: 10px !important;
+      opacity: 1;
+
+      i{
+        color: $gray-600 !important;
+        font-size: 1rem;
+
+      }
+    }
+
+  }
+
+
+}
+
+.mapData {
+  display: flex;
+  flex-direction: column;
+
+  &__list {
+    display: flex;
+    align-items: center;
+    padding:.5rem .5rem .5rem 1rem;
+    border-bottom: 1px solid $gray-100;
+
+    i {
+      margin: 0 1rem;
+      color: $mainYellow;
+    }
+
+    button {
+      border: none;
+      background-color: transparent;
+      padding: .5rem;
+      cursor: pointer;
+      margin-left: auto;
+
+      i {
+        color: $gray-600;
+      }
+
+    }
+  }
+}

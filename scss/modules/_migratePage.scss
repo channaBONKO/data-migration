@@ -1,0 +1,36 @@
+.migrateWrapper {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+
+  &__box {
+    height: 400px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    padding: .6rem;
+    text-align: center;
+  }
+
+  &__img {
+    margin-bottom: 1rem;
+  }
+
+  &__message {
+    margin-bottom: 1rem;
+
+    h5 {
+      font-weight: 600 !important;
+    }
+  }
+
+  &__submit {
+    input {
+      width: 50%;
+      border: none;
+      @extend .btnCustom;
+    }
+  }
+
+}

@@ -1,0 +1,105 @@
+.login__wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+
+  &__poweredImg{
+    text-align: center;
+    animation-name: poweredImg;
+    animation-duration: 2s;
+    opacity: 0;
+    img{
+      width: 50%;
+    }
+  }
+
+}
+
+.login {
+  height: 400px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  padding: .6rem;
+  text-align: center;
+
+  &__img {
+    img {
+      width: 50%;
+      margin-bottom: 4rem;
+      position: relative;
+      animation-name: logoAnimate;
+      animation-duration: 2s;
+
+    }
+
+  }
+
+  &__inputUser,
+  &__inputPass {
+    text-align: left;
+    animation-name: loginDelay;
+    animation-duration: 2s;
+
+    input {
+      width: 100%;
+      border: 1px solid #e1e1e1;
+      @extend .btnCustom;
+    }
+  }
+
+  &__submit {
+    animation-name: loginDelay;
+    animation-duration: 2s;
+
+    input {
+      width: 100%;
+      border: none;
+      margin-top: 2rem;
+      @extend .btnCustom;
+    }
+  }
+
+}
+
+
+@keyframes loginDelay {
+  0% {
+    opacity: 0;
+  }
+  75%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+@keyframes logoAnimate {
+  0%  {
+    top:50px;
+    width: 75%
+  }
+  50%{
+    top:50px;
+    width: 75%
+  }
+  100% {
+    top:0px;
+    width: 50%
+  }
+}
+
+@keyframes poweredImg {
+  0% {
+    opacity: 1;
+  }
+  75%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}

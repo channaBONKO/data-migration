@@ -1,0 +1,172 @@
+.wrapper__fluid {
+  display: flex;
+  height: 100vh;
+  background-color: $mainColor;
+  justify-content: center;
+  align-items: center;
+}
+
+.cnProject {
+  display: flex;
+  width: 600px;
+  height: 400px;
+  flex-direction: column;
+  padding: .6rem;
+
+  &__topSection {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1rem;
+
+    &__title {
+      h3 {
+        color: $white;
+        margin-bottom: 1rem;
+        font-weight: 400;
+      }
+    }
+
+    &__imgLogo {
+
+      .imgLine {
+        display: block;
+        overflow: hidden;
+        text-align: center;
+
+        &::before,
+        &::after {
+          content: "";
+          display: inline-block;
+          vertical-align: middle;
+          position: relative;
+          width: 50%;
+          border-top-style: solid;
+          border-top-width: 1px;
+          color: rgba(255, 255, 255, 0.2);
+        }
+
+        &:before {
+          right: -.2rem;
+          margin-left: -50%;
+        }
+
+        &:after {
+          left: -.2rem;
+          margin-right: -50%;
+        }
+
+      }
+
+      img {
+        vertical-align: middle;
+      }
+
+    }
+
+  }
+
+  &__bottomSection {
+
+    .navCustom {
+      border-bottom: none;
+
+      .nav-link {
+        border-radius: 0;
+        color: #ffffff;
+        padding: 0.5rem 1.5rem 0.5rem 0;
+
+      }
+
+      .nav-link.active {
+        background-color: transparent;
+        border-bottom: 1px solid #ffd24b;
+        padding: 0.5rem 1.5rem 0.5rem 0;
+      }
+
+    }
+
+
+    &__formExcel {
+      display: flex;
+      flex-direction: column;
+
+      &__topSection {
+        display: flex;
+
+        &__topLeft,
+        &__topRight {
+          width: 50%;
+          padding: .2rem 1rem .2rem 0;
+
+          input {
+            width: 100%;
+            border: none;
+            @extend .btnCustom;
+          }
+        }
+      }
+
+      &__bottomSection {
+        display: flex;
+
+        &__bottomLeft,
+        &__bottomRight {
+          width: 50%;
+          padding: .2rem 1rem .2rem 0;
+
+          input {
+            width: 100%;
+            border: none;
+            @extend .btnCustom;
+          }
+        }
+
+      }
+
+    }
+
+  }
+
+  &__footerSection {
+
+    display: flex;
+    width: 100%;
+    margin-top: 1.6rem;
+
+    &__cancel {
+      input {
+        @extend .btnCustom;
+        border: 1px solid $mainColor;
+        background-color: transparent;
+        color: $white;
+
+        &:hover {
+          cursor: pointer;
+          border: 1px solid $white;
+        }
+      }
+    }
+
+    &__creatNewBtn {
+      margin-left: auto;
+      padding-right: 1rem;
+
+      input {
+        @extend .btnCustom;
+        border: 1px solid $white;
+        color: $white;
+        background-color: transparent;
+
+        &:hover {
+          cursor: pointer;
+          border: 1px solid $mainColor_hover;
+        }
+
+      }
+    }
+
+  }
+
+}

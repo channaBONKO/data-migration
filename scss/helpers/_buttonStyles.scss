@@ -1,0 +1,64 @@
+button:focus {
+  outline: none;
+}
+
+.primary {
+  text-align: center;
+  background-color: $mainColor;
+  color: #ffffff;
+  border: 0;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $mainColor_hover;
+  }
+}
+
+.linkBtn{
+  text-align: center;
+  background-color: $white;
+  color: $mainColor;
+  border: 1px solid $mainColor;
+  cursor: pointer;
+  &:hover {
+    background-color: $gray-100;
+  }
+}
+
+.btnDanger{
+  text-align: center;
+  background-color: $red;
+  color: $white;
+  border:0;
+  cursor: pointer;
+  &:hover {
+    background-color: $orange;
+  }
+}
+
+.btnCustom {
+  border-radius: 0.15rem;
+  height: 40px;
+  padding: 5px 10px;
+}
+
+.projectProcess {
+  border: none;
+  background: none;
+  cursor: pointer;
+  outline: 0;
+
+  .fa {
+    color: $gray-500;
+    font-weight: 300;
+    outline: 0;
+    padding: 10px;
+    height: 35px;
+    width: 60px;
+
+    &:hover {
+      color: $mainColor;
+    }
+  }
+}
+
